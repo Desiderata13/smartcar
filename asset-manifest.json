@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/smartcar/static/css/main.a81d8ce8.css",
+    "main.js": "/smartcar/static/js/main.b5cdecaf.js",
+    "index.html": "/smartcar/index.html",
+    "main.a81d8ce8.css.map": "/smartcar/static/css/main.a81d8ce8.css.map",
+    "main.b5cdecaf.js.map": "/smartcar/static/js/main.b5cdecaf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a81d8ce8.css",
+    "static/js/main.b5cdecaf.js"
+  ]
+}
