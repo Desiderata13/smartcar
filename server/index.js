@@ -29,9 +29,9 @@ const app = express()
 const port = 8000;
 
 const client = new smartcar.AuthClient({
-  clientId: process.env.SMARTCAR_CLIENT_ID,
-  clientSecret: process.env.SMARTCAR_CLIENT_SECRET,
-  redirectUri: process.env.SMARTCAR_REDIRECT_URI,
+  clientId: "d7c9b34b-ab4b-4feb-887a-0c799cd847a7",
+  clientSecret: "3b0f3f8b-1faa-4ec1-9a0e-2b6daef00e5b",
+  redirectUri: "https://javascript-sdk.smartcar.com/v2/redirect?app_origin=http://localhost:3000",
   mode: 'live', // one of ['live', 'test', 'simulated']
 });
 
@@ -45,7 +45,7 @@ app.get('/exchange', async function(req, res) {
     // and handle refreshing the token, which expires after 2 hrs https://smartcar.com/docs/api/#refresh-token-exchange
     const accessToken = jwt.sign(
       access,
-      process.env.JWT_SECRET_KEY,
+      "33dec063-6cd4-4083-b155-f8b1acf5e5f2",
     )
     res.cookie('my-starter-app', accessToken, {
       expires: 0, // makes this a session cookie
