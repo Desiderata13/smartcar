@@ -35,8 +35,8 @@ const App = () => {
   };
 
   const smartcar = new Smartcar({
-    clientId: process.env.REACT_APP_CLIENT_ID,
-    redirectUri: process.env.REACT_APP_REDIRECT_URI,
+    clientId: "d7c9b34b-ab4b-4feb-887a-0c799cd847a7",
+    redirectUri: "https://javascript-sdk.smartcar.com/v2/redirect?app_origin=http://localhost:3000",
     // set scope of permissions: https://smartcar.com/docs/api/#permissions
     scope: getPermissions(),
     mode: config.mode, // one of ['live', 'test', 'simulated']
